@@ -1,0 +1,395 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   min-width: 1100px;
+   min-height: 600px;
+   box-sizing: border-box;
+}
+
+/* navigation menu */
+nav {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: #000;
+   border-radius: 24px;
+   padding: 3% 3.3%;    
+   height: 850px;
+   box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.5);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 230%;
+   margin-bottom: 370%;
+}
+
+.menu-img{
+   margin-bottom: 210%;
+}
+
+.main-info{
+   display: flex;
+   flex-direction: column;
+   width: 43vw;
+   margin-left: 5vw;
+   margin-top: 27px;
+}
+
+/* global style */
+
+a{
+   text-decoration: none;
+   color: black;
+}
+
+h1 {
+   font-family: 'Baloo Bhai 2', cursive;
+   font-size: 36px;
+   color: #000000;
+   line-height: 57px;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2{
+   font-family: 'Baloo Bhai 2', sans-serif;
+   font-weight: 800;
+   font-size: 1.5em;
+   line-height: 2.5em;
+}
+
+h3{
+   font-family: 'Baloo Bhai 2', sans-serif;
+   font-weight: 800;
+   font-size: 1em;
+   line-height: 1.8em;
+}
+
+p{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 1em;
+   line-height: 1.5em;
+}
+button{
+   outline: none;
+   border: none;
+   background: #000000;
+   border-radius: 8px;
+   width: 120px;
+   height: 40px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   font-size: 0.8em;
+   color: white;
+   cursor: pointer;
+}
+
+button:hover{
+   background-color: rgb(255, 255, 255);
+   color: black;
+   box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   text-shadow: 1px 1px 2px #427388; 
+}
+
+.background-gray{
+   background: #F5F5F7;
+   border-radius: 14px;
+}
+
+.chapter-gray {
+   opacity:0.3;
+}
+
+.margin-course {
+   margin-right: 4%;
+}
+
+
+.container{
+   display: flex;
+   margin: 2% 2%;
+}
+   /* main 'course' */
+.greeting {
+   display: flex;
+   width: 100%;
+   height: 160px;
+   padding: 3% 5%;
+   margin-bottom: 4%;
+}
+
+.greeting img{
+   position: absolute;
+   left: 40vw;
+   top: 1.8vw ;
+}
+
+.course-active{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.course-active-main {
+   display: flex;
+   align-items: center;    
+   width: 81%;
+   height: 80px;
+   padding: 0 2%;
+}
+
+.course-logo {
+   background: #fff;
+   width: 64px;
+   height: 64px;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.course-p{
+   font-size: 0.8em;
+   line-height: 1em;
+}
+
+.circle-status{
+   display: flex;
+   align-items: center;
+   margin-left: 10%;
+   margin-right: 3%;
+}
+
+.svg-circle{
+   display: flex;
+   align-items: center;
+   width: 45px;
+   height: 45px;
+}
+
+circle {
+   position: absolute;
+   fill: none;
+   stroke-width: 3px;
+   stroke-dasharray: 360;
+   stroke-dashoffset: 265;
+   stroke: black;
+}   
+
+.continue{
+   border-left-width: 10px;
+   margin-left: 50px;   
+}
+
+.number {
+   position: relative;
+   right: 32px;
+   font-size: 0.8em;
+}
+
+.courses {
+   margin-top: 5%;
+}
+
+.chapters {
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+}   
+
+.chapters h3:hover{
+   opacity: 1;
+}
+
+.course{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   height: 18%;
+   padding:0 3.5% 0 2%;
+   margin-top: 1.5%;
+   margin-bottom: 1.8%;
+}
+
+.course-name {
+   width: 28%;
+}
+
+.course-time {
+   display: flex;
+   align-items: center;
+   font-size: 0.8em;
+   width: 15%;
+   margin-left: 4%;
+}
+
+.course-time img{
+   margin-right: 8%;
+}
+
+.course-fire {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 0.8em;
+   width: 6.5%;
+   margin: 0 6% 0 5%;
+
+}
+
+.view_course{
+   margin-left: 20px;
+}
+
+/* Status block */
+
+
+.status {
+   display: flex;
+   flex-direction: column;
+   margin-left: 5%;
+   width: 31vw;
+   margin-top: 27px;
+}
+
+.status-bar{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 160px;
+}
+
+.status-bar-div{
+   display: flex;
+   align-items: center;
+}
+
+#search-input{
+   outline: none;
+   border: 0;
+   height: 100%;
+   width: 67%;
+   margin-right: 8%;
+   background-image: url(./svg/status/search.svg);
+   background-repeat: no-repeat;
+   background-position: 5% 50%;
+   padding: 0 0 0 10%;
+}
+
+.profile-photo {
+   margin-left: 5%;
+   cursor: pointer;
+}
+
+#profile-menu {
+   border: none;
+   outline: none;
+   appearance: none;   
+   background-image: url(./images/arrow-down.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 20px;
+   cursor: pointer;
+}
+
+.courses-result{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.courses-result__inner{
+   background-color: #F5F5F7;
+   border-radius: 14px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   width: 47%;
+}
+
+.courses-result__inner + .courses-result__inner{
+   margin-left: 10px;
+}
+
+.courses-result__number{
+   font-family: 'Baloo Bhaina 2', cursive;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 4em;
+   line-height: 150%;
+   color:black;
+   margin-right: 12px;
+}
+
+.courses-result__state{
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 1em;
+   line-height: 150%;
+   color: black;
+}
+
+.statistic{
+   margin-top: 7%;
+}
+
+.statistic-chapters {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   margin-top: 1%;   
+}
+
+#graph-select{
+   outline: none;
+   border:0;
+   border-radius: 8px;
+   padding: 1.5%;
+   width: 8vw;
+   margin: 0 2% 0 30%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 0.8em;
+   font-weight: bold;
+   appearance: none;   
+   background-image: url(./svg/status/arrow_down.svg);
+   background-repeat: no-repeat;
+   background-position-x: 80%;
+   background-position-y: center;
+   cursor: pointer;
+}
+.graph{
+   margin-top: 7%;
+   width: 31vw;
+}
+
+.learn-more {
+   margin-top: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5% 12% 3% 5%;
+}
+
+.learn-more-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-right: 10%;
+}
+
+.learn-more-text h2{
+  line-height: 1.6em;
+}
+
+.learn-more-text button{
+   margin-top: 13%;
+}
